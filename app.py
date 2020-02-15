@@ -22,12 +22,12 @@ def start():
                         if len(message) is not 0:
                             if dms[i]['media'] is None:
                                 print("DM will be posted")
-                                tw.post_tweet("-punten", message)
+                                tw.post_tweet(message)
 
                             else:
                                 print("DM will be posted with media")
                                 print(dms[i]['shorted_media_url'])
-                                tw.post_tweet_with_media("-punten", message, dms[i]['media'],dms[i]['shorted_media_url'])
+                                tw.post_tweet_with_media(message, dms[i]['media'],dms[i]['shorted_media_url'])
 
 
                         else:
